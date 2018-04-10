@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <title>Кредитный калькулятор</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">Новый клиент</div>
+    <div class="header bg"><a href="#">Постоянный клиент</a></div>
+    <form method="post" class="">
+        <div class="main">
+            <section class="table">
+                <div class="column_1">
+                    <div class="slider-wrapper container">
+                            <div class="title-slider">Сумма: </div>
+                            <span id="subst-sum" class="range-btn">&minus;</span>
+                            <div class="slidercontainer">
+                                <input type="range" id="sumSlider" class="slider" name="sumRange" min="50" max="2500" value="1000" step="50">
+                                <div id="sumTooltip" class="range-output">
+                                    <span class="range-label" id="sumLabel">1000</span>
+                                    <div id="triangle-topright"></div>
+                                </div>
+                            </div>
+                            <span id="add-sum" class="range-btn">+</span>
+                            <input type="text" id="sum" class="box-value" value="1000">
+                            <span class="currency">грн</span>
+                    </div>
+
+                    <div class="slider-wrapper container">
+                        <div class="title-slider">Срок: </div>
+                        <span id="subst-day" class="range-btn">&minus;</span>
+                        <div class="slidercontainer">
+                            <input type="range" id="daySlider" min="1" max="30" value="16" step="1" class="slider">
+                            <div id="dayTooltip" class="range-output">
+                                <span class="range-label" id="dayLabel">16</span>
+                                <div id="triangle-topright"></div>
+                            </div>
+                        </div>
+                        <span id="add-day" class="range-btn">+</span>
+                        <input type="data" id="datepicker" class="box-value" value="16">
+                        <span class="currency">дней</span>
+                    </div>
+
+                    <div class="footer">
+                        <div class="slider-main">
+                            <div class="text-footer"><span>Деньги у вас в</span>
+                                <span class="wrapper-time">
+                                <div class="time" id="hour-1"></div>
+                                <div class="time" id="hour-2"></div>
+                                <span>:</span>
+                                <div class="time" id="minute-1"></div>
+                                <div class="time" id="minute-2"></div>
+                                </span>
+                            </div>
+                            <button type="button" class="myButton"><a href="#">Получить деньги</a></button>
+                        </div>
+                    </div>
+                </div>  <!-- END of Column 1 -->
+
+                <div class="column_2">
+                    <div class="row"><p>Сумма к получению</p><p id="recieve-sum">1000 грн</p></div>
+                    <div class="row"><p>Проценты</p><p id="percent">0,70 грн</p></div>
+                    <div class="row"><p>Сумма к погашению</p><p id="returnSum">1000,70 грн</p></div>
+                    <div class="row"><p>Дата возврата</p><p id="data-return">10 апреля 2018, Вс</p></div>
+
+                    <div class="images"></div>
+                </div>
+            </section>
+        </div>
+
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
