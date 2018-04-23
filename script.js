@@ -17,7 +17,7 @@ var today = new Date(),
 $(function() {
     $( "#datepicker" ).datepicker({
         showOn: "button",
-        buttonImage: "https://s7.postimg.org/t5326waa3/cal.png",
+        buttonImage: "https://www.freeiconspng.com/uploads/calendar-green-icon-png-17.png",
         buttonImageOnly: true,
         buttonText: "Выберите дату",
         hidden: false,
