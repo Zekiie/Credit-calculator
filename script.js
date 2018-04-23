@@ -17,7 +17,7 @@ var today = new Date(),
 $(function() {
     $( "#datepicker" ).datepicker({
         showOn: "button",
-        buttonImage: "https://www.freeiconspng.com/uploads/calendar-green-icon-png-17.png",
+        buttonImage: "http://vanfietsnaar-e-bike.nl/wp-content/uploads/2015/06/calendar-icon_green-250x250.pngg",
         buttonImageOnly: true,
         buttonText: "Выберите дату",
         hidden: false,
